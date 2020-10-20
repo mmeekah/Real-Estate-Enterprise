@@ -1,0 +1,53 @@
+MODEL/DB FIELDS
+
+
+###LISTING
+
+id: INT
+realtor: INT(FOREIGN KEY [realtor])
+title: STRING
+address: STRING
+city: STRING
+state: STRING
+zipcode: STRING
+description: TextFIeld
+price: INT
+bedrooms: INT
+bathrooms: INT
+garage: INT[0]
+sqft: INT
+lot_size: FLOAT
+is_published: BOOL[true]
+list_date: Date
+photo_main: STRING
+photo_1:STR
+photo_2:STR
+photo_3:STR
+photo_4:STR
+photo_5:STR
+photo_6:STR
+
+
+
+###REALTOR
+
+id: INT
+name: STRING
+photo: STR
+description: TextFIeld
+email: STR
+phone: STR
+is_mvp: BOOL [0]
+hire_date: DATE
+
+###CONTACT
+
+id: INT
+user_id: INT
+listing: INT
+listing_id: INT
+name: STR
+email:STR
+phone: STR
+message: TextFIeld
+contact_date: DATE
