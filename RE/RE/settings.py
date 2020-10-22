@@ -86,7 +86,7 @@ DATABASES = {
         'NAME': 'redb',
         'USER': 'postgres',
         'PASSWORD': 'password',
-        'HOST': 'localhost'
+        'HOST': 'localhost',
     }
 }
 

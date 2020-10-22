@@ -1,6 +1,9 @@
+
 from django.db import models
+from decimal import Decimal
 from datetime import datetime
 from realtors.models import Realtor
+
 
 
 class Listing(models.Model):
@@ -10,6 +13,10 @@ class Listing(models.Model):
     city = models.CharField(max_length=100)
     state = models.CharField(max_length=100)
     zipcode = models.CharField(max_length=20)
+
+    latitude = models.DecimalField(max_digits=22, decimal_places=16,blank=True, null=True)
+    longitude = models.DecimalField(max_digits=22, decimal_places=16,blank=True, null=True)
+    
     description = models.TextField(blank=True)
     price = models.IntegerField()
     bedrooms = models.IntegerField()
